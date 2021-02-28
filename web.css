@@ -1,0 +1,111 @@
+*{margin:0;padding:auto;box-sizing:border-box}
+
+body{font-family:system-ui, Helvetica, Arial, sans-serif;}
+
+#container{width:90%;max-width:700px;margin:auto; margin-bottom: 8rem;margin-top: 3rem;}
+
+h1{font-size:2rem;margin-top:1rem;font-family: arial,sans-serif,monospace;}
+
+h1,h2,h3{color:black}
+
+h2,h3{margin:2rem 0 1rem}
+
+p,li{font-size:1rem;line-height:143%;color:#444;margin:1rem 0}
+
+a{color:#444;text-decoration: none;transition: .15s;padding-bottom: 0;}
+
+a:hover,a:active{color: #999999;}
+
+img{max-width:100%}
+
+table, th, td {border: 1px solid black;border-collapse: collapse;}
+
+th, td {padding: 10px;}
+
+.content a{ border-radius: 4px; background-color:#E7F8FF;}
+
+.footerleft {
+  float: left;
+}
+
+.footerright { 
+  float: right;
+}  
+
+.fa {padding: 5px; font-size: 25px;  width: 30px; text-align: left; text-decoration: none;}
+
+.fa:hover { opacity: 0.7;}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color:white;
+    text-align: center;
+    padding:15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-decoration:none ;
+    font-weight: bold;
+    
+  }
+
+.topnav .icon {
+  display: none;
+  }  
+  
+.topnav a:hover {
+    color:grey;
+  }
+  
+.topnav-right {
+    float: right;
+    font-size: 25px;
+    margin-right: 50px;
+  }
+
+.topnav-left {
+    float: left;
+    font-size: 25px;
+    margin-left: 50px ;
+  }
+
+
+@media screen and (max-width: 850px) {
+  .topnav-left a:not(:first-child) {display: none;}
+  .topnav-right a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav-right {
+    margin-right: 0px;
+    float: none;
+  }
+  .topnav-left {
+    margin-left: 0px ;
+    float: none;
+  }
+  
+}
+
+@media screen and (max-width: 850px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav.responsive a {
+    float: none;
+    font-size: 25px;
+    display:flow-root;
+    text-align: left;
+    
+  }
+}
